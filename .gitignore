@@ -72,3 +72,10 @@ xvlog.*
 ## checkpoint files
 *.dcp
 
+## ---- rhit-neuro cleanup additions (CLEANUP.md §4.1) ----
+# Sky130 PDK reference libs — never vendor into git (see §5.1)
+**/libs.ref/
+# Vendored mgmt-core ASIC signoff/layout — never vendor into git (see §5.2)
+caravel_mgmt_soc_litex/signoff/
+caravel_mgmt_soc_litex/lvs/
+
