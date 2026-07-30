@@ -50,6 +50,10 @@ unisims
 */CARAVEL.ip_user_files/
 */CARAVEL.runs/
 */CARAVEL.sim/
+*/CARAVEL.gen/
+*.ip_user_files/
+
+
 
 ###### for Xilinx Vivado|ISE
 */.Xil/
@@ -68,6 +72,13 @@ xvlog.*
 *.hw
 *.backup.*
 *.debug
+
+
+##out of context IP builds
+*_sim_netlist.v
+*_sim_netlist.vhdl
+*_stub.v
+*_stub.vhdl
 
 ## checkpoint files
 *.dcp
