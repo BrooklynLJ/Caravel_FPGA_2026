@@ -16,6 +16,6 @@
 
 CPU=vexriscv
 CPUFAMILY=riscv
-CPUFLAGS=-march=rv32i_zicsr      -mabi=ilp32 -D__vexriscv__
+CPUFLAGS=-march=rv32i_zicsr      -mabi=ilp32 -D__vexriscv__  -fno-asynchronous-unwind-tables -fno-unwind-tables
 CPUENDIANNESS=little
 CLANG=0
