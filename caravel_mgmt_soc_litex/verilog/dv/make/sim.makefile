@@ -49,7 +49,7 @@ hex:  ${BLOCKS:=.hex}
 %.hex: %.elf
 	${GCC_PATH}/${GCC_PREFIX}-objcopy -O verilog $< $@ 
 	# to fix flash base address
-	sed -ie 's/@10/@00/g' $@
+	sed -i -e 's/@10/@00/g' $@
 
 %.bin: %.elf
 	${GCC_PATH}/${GCC_PREFIX}-objcopy -O binary $< /dev/stdout | tail -c +1048577 > $@
