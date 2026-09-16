@@ -52,7 +52,7 @@ hex:  ${BLOCKS:=.hex}
 	sed -i -e 's/@10/@00/g' $@
 
 %.bin: %.elf
-	${GCC_PATH}/${GCC_PREFIX}-objcopy -O binary $< /dev/stdout | tail -c +1048577 > $@
+	${GCC_PATH}/${GCC_PREFIX}-objcopy -O binary $< $@
 	
 	
 ##############################################################################
